@@ -11,7 +11,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-str_connection = 'postgresql://postgres:Andes420.@localhost:5432/postgres'
+str_connection = 'postgresql://postgres:yourpassword@localhost:5432/postgres'
 engine = create_engine(str_connection)
 SessionLocal = sessionmaker(autocommit=False,autoflush=False, bind=engine)
 
