@@ -12,3 +12,16 @@ class SwapIndexValue(BaseModel):
         effective_end_date: dt.date
         class Config:
             orm_mode = True
+            
+class DateRange(BaseModel):
+        type_data: str
+        id: int
+        date_ini: dt.date
+        date_end: dt.date
+            
+            
+class Date(BaseModel):
+        date_unique: dt.date
+
+class Id(BaseModel):
+        id: int

@@ -6,7 +6,7 @@ import sqlalchemy as sa
 import sys
 import numpy as np
 
-import functions as fn
+
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
